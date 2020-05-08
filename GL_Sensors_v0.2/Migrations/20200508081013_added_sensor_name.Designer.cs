@@ -4,14 +4,16 @@ using GL_Sensors_v0._2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GL_Sensors_v0._2.Migrations
 {
     [DbContext(typeof(GL_Sensors_v0_2Context))]
-    partial class GL_Sensors_v0_2ContextModelSnapshot : ModelSnapshot
+    [Migration("20200508081013_added_sensor_name")]
+    partial class added_sensor_name
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -54,7 +54,7 @@ namespace GL_Sensors_v0._2.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id")] Sensor sensor)
+        public async Task<IActionResult> Create([Bind("Id,name")] Sensor sensor)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace GL_Sensors_v0._2.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id")] Sensor sensor)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,name")] Sensor sensor)
         {
             if (id != sensor.Id)
             {

@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.CzujnikId)
+                @Html.DisplayNameFor(model => model.SensorId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.pm_1_0)
@@ -33,14 +33,14 @@
             <th>
                 @Html.DisplayNameFor(model => model.Time)
             </th>
-            <th></th>
+            
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.CzujnikId)
+                @Html.DisplayFor(modelItem => item.SensorId)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.pm_1_0)
@@ -69,11 +69,3 @@
 }
     </tbody>
 </table>
-<body>
-    <img src="~/data/images/OfficeLayoutWithIDs.png" alt="Workplace" usemap="#workmap" />
-
-    <map name="workmap">
-        <area shape="rect" coords="140,320,180,380" alt="Computer" href="@Url.Action("ReturnMeasurements", "Measurements")?id=1">
-        <area shape="rect" coords="190,320,290,380" alt="Phone" href="@Url.Action("Zwroc_odczyty", "Odczyts")?id=2">
-    </map>
-</body>

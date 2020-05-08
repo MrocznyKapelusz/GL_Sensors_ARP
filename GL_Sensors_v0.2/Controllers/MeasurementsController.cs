@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GL_Sensors_v0._2.Data;
 using GL_Sensors_v0._2.Models;
+using Nancy.Json;
 
 namespace GL_Sensors_v0._2.Controllers
 {
@@ -54,7 +55,7 @@ namespace GL_Sensors_v0._2.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CzujnikId,pm_1_0,pm_2_5,pm_10,temp,humidity,CzasPomiaru")] Measurement measurement)
+        public async Task<IActionResult> Create([Bind("Id,CzujnikId,pm_1_0,pm_2_5,pm_10,temp,humidity,Time")] Measurement measurement)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +87,7 @@ namespace GL_Sensors_v0._2.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,CzujnikId,pm_1_0,pm_2_5,pm_10,temp,humidity,CzasPomiaru")] Measurement measurement)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CzujnikId,pm_1_0,pm_2_5,pm_10,temp,humidity,Time")] Measurement measurement)
         {
             if (id != measurement.Id)
             {
@@ -148,6 +149,36 @@ namespace GL_Sensors_v0._2.Controllers
         private bool MeasurementExists(int id)
         {
             return _context.Measurement.Any(e => e.Id == id);
+        }
+
+
+        //Wydaje mi się, że w ten sposób będziemy dodawać rekordy
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddData(string json)
+        {
+            var serializer = new JavaScriptSerializer();
+            dynamic jsondata = serializer.Deserialize<object>(json);
+            Measurement measurement = new Measurement(); ;
+            //for (int i=0;i<3;++i)
+            //{
+
+                //measurement.SensorId = select [Id] from _context.Sensor where [name]="device0"; //chciałem użyć tutaj LINQ, ale coś nie działa
+                measurement.pm_1_0 = jsondata["device_0"]["pm_1_0"];
+                measurement.pm_2_5 = jsondata["device_0"]["pm_2_5"];
+                measurement.pm_10 = jsondata["device_0"]["pm_10"];
+                measurement.temp = jsondata["device_0"]["temp"];
+                measurement.humidity = jsondata["device_0"]["humidity"];
+
+                if (ModelState.IsValid)
+                {
+                    _context.Add(measurement);
+                    await _context.SaveChangesAsync();
+                    //return RedirectToAction(nameof(Index));
+                }
+            //}
+            
+            return View(measurement);
         }
     }
 }

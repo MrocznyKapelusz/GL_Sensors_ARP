@@ -154,8 +154,6 @@ D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\bin\Debug\netcoreapp3.1\
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\GL_Sensors_v0.2.csproj.CoreCompileInputs.cache
-D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\GL_Sensors_v0.2.MvcApplicationPartsAssemblyInfo.cache
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\GL_Sensors_v0.2.Views.pdb
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\GL_Sensors_v0.2.dll
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\GL_Sensors_v0.2.pdb
@@ -172,3 +170,5 @@ D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\Razor\Views\Sensors\Index.cshtml.g.cs
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Images.cshtml.g.cs
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\Razor\Views\Measurements\ReturnMeasurements.cshtml.g.cs
+D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\GL_Sensors_v0.2.csproj.CoreCompileInputs.cache
+D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\GL_Sensors_v0.2.MvcApplicationPartsAssemblyInfo.cache

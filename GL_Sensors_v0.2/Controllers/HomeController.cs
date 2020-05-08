@@ -28,6 +28,11 @@ namespace GL_Sensors_v0._2.Controllers
             return View();
         }
 
+        public IActionResult Images()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
