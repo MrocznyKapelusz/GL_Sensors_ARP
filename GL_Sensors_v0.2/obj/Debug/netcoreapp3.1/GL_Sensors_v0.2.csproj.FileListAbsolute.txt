@@ -172,3 +172,5 @@ D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\Razor\Views\Measurements\ReturnMeasurements.cshtml.g.cs
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\GL_Sensors_v0.2.csproj.CoreCompileInputs.cache
 D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\obj\Debug\netcoreapp3.1\GL_Sensors_v0.2.MvcApplicationPartsAssemblyInfo.cache
+D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Studia\6_SEMESTR\ProjZesp\GL_Sensors\GL_Sensors_v0.2\bin\Debug\netcoreapp3.1\Nancy.dll
