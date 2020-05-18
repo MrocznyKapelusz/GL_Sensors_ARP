@@ -20,6 +20,15 @@ namespace GL_Sensors_v0._2.Controllers
             _context = context;
         }
 
+
+        public async Task<IActionResult> ReturnMeasurements(int? id)
+        {
+            var gL_Sensors_v0_2Context = _context.Measurement.Include(o => o.Sensor).Where(e => e.SensorId == id);
+            return View(await gL_Sensors_v0_2Context.ToListAsync());
+        }
+
+        
+
         // GET: Measurements
         public async Task<IActionResult> Index()
         {
